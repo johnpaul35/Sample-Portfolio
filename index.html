@@ -1,22 +1,771 @@
-index.html
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>John Paul S Abion - Portfolio</Portfolio>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Personal portfolio Website</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>John Paul S Abion</h1>
-        <p>Student &amp; Developer</p>
-    </header>
-    <section id="projects">
-        <h2>Projects</h2>
-        <!-- Add your project details here -->
-    </section>
-    <footer>
-        <p>&copy; 2023 Your Name</p>
-    </footer>
+<body id="top" class="dark_theme">
+
+  <div id="particles-js"></div>
+
+  <!-- 
+    - #HEADER
+  -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1 class="John logo">
+        <a href="#">
+          <img src="./assets/images/logo final.png" alt="John's Logo">
+        </a>
+      </h1>
+
+      <div class="navbar-actions">
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link">Skills</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+
+        <figure class="hero-banner">
+            <img src=".\assets\images\Main.png" alt="#"
+              class="w-100">
+          </picture>
+
+        </figure>
+
+        <div class="hero-content">
+
+          <h2 class="h2 hero-title">Animators/Developer</h2>
+          <h2 class="h2 hero-title"><span class="white-text">Hi! I'm</span> <span class="blue-text">John</span></h2>
+          
+
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+
+        </div>
+
+        <ul class="hero-social-list">
+
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100071452560826&mibextid=ZbWKwp" class="hero-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+
+              <div class="tooltip">Facebook</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/paul11" class="hero-social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+
+              <div class="tooltip">Instagram</div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.artstation.com/johnpaulabion8" class="hero-social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+
+              <div class="tooltip">ArtStation</div>
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+
+
+
+    
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+
+        <figure class="about-banner">
+          <img src="d:\Abion,John Paul(Portfolio)\About Logo.png" alt="d:\Abion,John Paul(Portfolio)\About Logo.png"
+            class="w-100">
+        </figure>
+
+        <div class="about-content section-content">
+
+          <p class="section-subtitle">About me</p>
+
+          <h2 class="h3 section-title">Need a Creative Product? I can Help You!</h2>
+
+          <p class="section-text">
+            Hello there! I'm John, and I'm thrilled to share 
+                    a bit more about myself with you. I consider myself 
+                    a hybrid of sorts, with a passion for both animation
+                    and development. As a college student, I've honed
+                    my skills and learned to apply them effectively in 
+                    a variety of environments. Want to know more? Check out my resume.
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-secondary">Check My Resume</button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="skills" id="skills">
+
+        <div class="skills-content section-content">
+
+          <p class="section-subtitle">My skills</p>
+
+          <h2 class="h3 section-title">What My Skills Included?</h2>
+
+          <p class="section-text">
+            Check my skills and tools that i used as an animator and developer
+          </p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+            <button class="toggle-btn" data-toggle-btn>Tools</button>
+          </div>
+
+        </div>
+
+        <div class="skills-box" data-skills-box>
+
+          <ul class="skills-list">
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/html5.png" alt="HTML5 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">CSS</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/css3.png" alt="CSS3 logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JavaScript</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/javascript.png" alt="JavaScript logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">MYSQL</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/MySQL-Logo.png" alt="MySQL-Logo logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">PHP</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/PHP-logo.png" alt="PHP logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Gradle</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/gradle.png" alt="Gradle logo">
+                </div>
+              </div>
+            </li>
+
+
+          </ul>
+
+          <ul class="tools-list">
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Adobe Lightroom</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/Adobe_Lightroom.png" alt="Lightroom logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Microsoft Office</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/microsoft office.png" alt="Microsoft logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">capcut</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/capcut.png" alt="capcut logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Adobe Illustrator</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/Adobe_Illustrator.png" alt="Adobe llustrator logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">VS Code</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/vs-code.png" alt="VS Code logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Canva</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/Canva.png" alt="Canva logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Maya</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/Maya.png" alt="Maya logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Blender</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/Blender.png" alt="Blender Logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Photoshop</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/photoshop.png" alt="Photoshop logo">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Adobe premiere</div>
+
+                <div class="card-icon">
+                  <img src="./assets/images/adobe premiere.png" alt="Adobe premiere logo">
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROJECTS
+      -->
+      <section class="portfolio" id="portfolio"></section>
+
+      <div class="about-content section-content">
+
+        <p class="section-subtitle">My Portfolio</p>
+
+        <h2 class="h3 section-title"> Explore my portfolio and discover the latest updates</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/images/3d Modeling/Donut page.png">
+                    <div class="layer">
+                        <h3>3D Modeling</h3>
+                        <p>Check out my 3D Modeling art.</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/Photography/373491708_824352999480747_3119581994926155887_n.jpg">
+                    <div class="layer">
+                        <h3>Photography</h3>
+                        <p>Check out my Photography sample.</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/Traditional Art/383164203_2532477693588369_6174338511156739305_n.jpg">
+                    <div class="layer">
+                        <h3>Traditonal Art</h3>
+                        <p>Check out my Traditional Art.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="newpage.html" class="btn">See more</a>
+        </div>
+    </div>
+             
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="contact" id="contact">
+
+        <div class="contact-content section-content">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h3 section-title">"🤝 Need a Helping Hand?  Drop a Message"</h2>
+
+          <p class="section-text">
+            "🤝 Let's Connect! Tell me how I can assist you. 📝 Complete the form, and I'll reach out ASAP. 🚀"
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
+
+                <address class="contact-info">
+                  Polangui, Albay
+                </address>
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+
+                <a href="tel:01234567789" class="contact-info">(09099792546)</a>
+
+              </div>
+
+            </li>
+
+            <li class="contact-list-item">
+
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+
+                <a href="mailto:info@jack.com" class="contact-info">cyehunter.@gmail.com</a>
+
+              </div>
+
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=100071452560826&mibextid=ZbWKwL" class="contact-social-link">
+                    <div class="tooltip">Facebook</div>
+
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/paul11" class="contact-social-link">
+                    <div class="tooltip">Instagram</div>
+
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.artstation.com/johnpaulabion8" class="contact-social-link">
+                    <div class="tooltip">ArtStation</div>
+
+                    <ion-icon name="logo-pinterest"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://web.telegram.org/k/" class="contact-social-link">
+                    <div class="tooltip">Telegram</div>
+
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <form action="" class="contact-form">
+
+          <div class="form-wrapper">
+
+            <label for="name" class="form-label">Name</label>
+
+            <div class="input-wrapper">
+
+              <input type="text" name="name" id="name" required placeholder="Enter your name" class="input-field">
+
+              <ion-icon name="person-circle"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="email" class="form-label">Email</label>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email" id="email" required placeholder="Enter your email"
+                class="input-field">
+
+              <ion-icon name="mail"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="phone" class="form-label">Phone</label>
+
+            <div class="input-wrapper">
+
+              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
+
+              <ion-icon name="call"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <div class="form-wrapper">
+
+            <label for="message" class="form-label">Message</label>
+
+            <div class="input-wrapper">
+
+              <textarea name="message" id="message" required placeholder="Write message..."
+                class="input-field"></textarea>
+
+              <ion-icon name="chatbubbles"></ion-icon>
+
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+
+        </form>
+
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+
+        <div style="display: flex; align-items: center;">
+            <p class="h1 logo">
+                <a href="">
+                </a>
+            </p>
+            <p class="copyright">
+                <img src="./assets/images/logo final f.png" alt="JP Logo" class="logo">
+            </p>
+        </div>
+        
+        <p>&copy; 2023 John Paul Abion</p>
+
+    </div>
+</footer>
+
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <!-- 
+    - Custom JavaScript for particle effect -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      particlesJS('particles-js', {
+        particles: {
+          <!-- Custom JavaScript for particle effect -->
+        number: {
+          value: 80,
+          density: {
+            enable: true,
+            value_area: 800,
+          },
+        },
+        color: {
+          value: '#ffffff',
+        },
+        shape: {
+          type: 'circle',
+          stroke: {
+            width: 0,
+            color: '#000000',
+          },
+          polygon: {
+            nb_sides: 5,
+          },
+        },
+        opacity: {
+          value: 0.5,
+          random: false,
+          anim: {
+            enable: false,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: false,
+          },
+        },
+        size: {
+          value: 3,
+          random: true,
+          anim: {
+            enable: false,
+            speed: 40,
+            size_min: 0.1,
+            sync: false,
+          },
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#ffffff',
+          opacity: 0.4,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 6,
+          direction: 'none',
+          random: false,
+          straight: false,
+          out_mode: 'out',
+          bounce: false,
+          attract: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 1200,
+          },
+        },
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: {
+            enable: true,
+            mode: 'repulse',
+          },
+          onclick: {
+            enable: true,
+            mode: 'push',
+          },
+          resize: true,
+        },
+        modes: {
+          grab: {
+            distance: 400,
+            line_linked: {
+              opacity: 1,
+            },
+          },
+          bubble: {
+            distance: 400,
+            size: 40,
+            duration: 2,
+            opacity: 8,
+            speed: 3,
+          },
+          repulse: {
+            distance: 200,
+            duration: 0.4,
+          },
+          push: {
+            particles_nb: 4,
+          },
+          remove: {
+            particles_nb: 2,
+          },
+        },
+      },
+      retina_detect: true,
+    });
+  });
+</script>
+
+  </script>
+
 </body>
+
 </html>
 

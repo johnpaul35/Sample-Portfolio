@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio</title>
+    <link rel="stylesheet" href="works.css">
+
+        
+    </style>
+</head>
+<body>
+    <div id="particles"></div>
+    
+    <header>
+        <div class="header-content">
+            <img src="./assets/images/logo final.png" alt="Your Logo" class="logo">
+            <h1>Welcome to My Art Gallery</h1>
+            <p>Showcasing creativity through art</p>
+        </div>
+    </header>
+
+    <button id="backButton">Back</button>
+
+    <section class="categories">
+        <h2>Categories</h2>
+        <button onclick="showCategory('photography')">Photography Art</button>
+        <button onclick="showCategory('digital')">Digital Art</button>
+        <button onclick="showCategory('3d')">3D Model Art</button>
+        <button onclick="showCategory('Traditional')">Traditional Art</button>
+    </section>
+
+    <section class="gallery" id="image-container">
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function goBackToHomePage() {
+            window.location.href = 'index.html';
+        }
+        document.getElementById('backButton').addEventListener('click', goBackToHomePage);
+    </script>
+</body>
+</html>
