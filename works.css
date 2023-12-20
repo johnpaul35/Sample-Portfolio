@@ -7,7 +7,7 @@ body {
 
 .header-content {
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .header-content h1 {
@@ -88,21 +88,43 @@ body {
     left: 0;
     z-index: -1; 
     pointer-events: auto; 
-    background-color: #414143; 
-#backButton{
-    color: rgb(0, 0, 0);
+    background-color: #414143;
+}
+
+    #backButton {
+        color: rgb(0, 0, 0);
         position: absolute;
         top: 30px;
         right: 15px;
+        font-size: 16px;
+        padding: 10px 15px;
+        background-color: #fff;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     }
     
-
-.logo {
-    width: 100px; 
-    height: auto; 
-    display: block; 
-    position: absolute;
-    top: 10px; 
-    left: 15px; 
-}
-
+    #backButton:hover {
+        background-color: #0a86e6;
+        color: #fff;
+    }
+    
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* ... other CSS rules ... */
+    
+    .logo {
+        width: 100px; 
+        height: auto; 
+        display: block; 
+        position: absolute;
+        top: 10px; 
+        left: 15px; 
+    }
+    
+    
